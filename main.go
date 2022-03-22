@@ -85,6 +85,7 @@ func updateMovie(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	//init router
 	r := mux.NewRouter() //newRouter is a function inside mux  library
 
 	movies = append(movies, Movie{ID: "1", Isbn: "3445", Title: "Movie one", Director: &Director{Firstname: "yash", Lastname: "verma"}})
