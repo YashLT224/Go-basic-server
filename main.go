@@ -54,6 +54,7 @@ func getMovie(w http.ResponseWriter, r *http.Request) {
 		}
 
 	}
+	json.NewEncoder(w).Encode(&Movie{})      			//whe you dont find book by id
 }
 
 func createMovie(w http.ResponseWriter, r *http.Request) {
